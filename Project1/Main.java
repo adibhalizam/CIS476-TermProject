@@ -10,15 +10,15 @@ abstract class MicroOfficeFactory {
     public abstract AbstractTextBox createTextBox();
 }
 
-class ConcreteWord90Factory extends MicroOfficeFactory {
+class ConcreteWord90 extends MicroOfficeFactory {
 
     //Singleton Implementation
     private static int instanceCount = 0;
-    private ConcreteWord90Factory(){}
-    public static ConcreteWord90Factory getInstance() {
+    private ConcreteWord90(){}
+    public static ConcreteWord90 getInstance() {
         if(instanceCount < 2) {
             instanceCount++;
-            return new ConcreteWord90Factory();
+            return new ConcreteWord90();
         }
 
         else {
@@ -44,15 +44,15 @@ class ConcreteWord90Factory extends MicroOfficeFactory {
 
 }
 
-class ConcreteWord00Factory extends MicroOfficeFactory {
+class ConcreteWord00 extends MicroOfficeFactory {
     
     //Singleton Implementation
     private static int instanceCount = 0;
-    private ConcreteWord00Factory(){}
-    public static ConcreteWord00Factory getInstance() {
+    private ConcreteWord00(){}
+    public static ConcreteWord00 getInstance() {
         if(instanceCount < 2) {
             instanceCount++;
-            return new ConcreteWord00Factory();
+            return new ConcreteWord00();
         }
 
         else {
@@ -77,15 +77,15 @@ class ConcreteWord00Factory extends MicroOfficeFactory {
     }
 }
 
-class ConcreteWord10Factory extends MicroOfficeFactory {
+class ConcreteWord10 extends MicroOfficeFactory {
     
     //Singleton Implementation
     private static int instanceCount = 0;
-    private ConcreteWord10Factory(){}
-    public static ConcreteWord10Factory getInstance() {
+    private ConcreteWord10(){}
+    public static ConcreteWord10 getInstance() {
         if(instanceCount < 2) {
             instanceCount++;
-            return new ConcreteWord10Factory();
+            return new ConcreteWord10();
         }
 
         else {
@@ -110,15 +110,15 @@ class ConcreteWord10Factory extends MicroOfficeFactory {
     }
 }
 
-class ConcreteWord24Factory extends MicroOfficeFactory {
+class ConcreteWord24 extends MicroOfficeFactory {
     
     //Singleton Implementation
     private static int instanceCount = 0;
-    private ConcreteWord24Factory(){}
-    public static ConcreteWord24Factory getInstance() {
+    private ConcreteWord24(){}
+    public static ConcreteWord24 getInstance() {
         if(instanceCount < 2) {
             instanceCount++;
-            return new ConcreteWord24Factory();
+            return new ConcreteWord24();
         }
 
         else {
@@ -282,16 +282,16 @@ public class Main {
 
                 switch (generation) {
                     case "Word90":
-                        factory = ConcreteWord90Factory.getInstance();
+                        factory = ConcreteWord90.getInstance();
                         break;
                     case "Word00":
-                        factory = ConcreteWord00Factory.getInstance(); // Singleton, will be the same instance on each call
+                        factory = ConcreteWord00.getInstance(); // Singleton, will be the same instance on each call
                         break;
                     case "Word10":
-                        factory = ConcreteWord10Factory.getInstance(); // Singleton, will be the same instance on each call
+                        factory = ConcreteWord10.getInstance(); // Singleton, will be the same instance on each call
                         break;
                     case "Word24":
-                        factory = ConcreteWord24Factory.getInstance(); // Singleton, will be the same instance on each call
+                        factory = ConcreteWord24.getInstance(); // Singleton, will be the same instance on each call
                         break;
                     default:
                         System.err.println("Unknown generation: " + generation);
