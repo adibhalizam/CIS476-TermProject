@@ -89,7 +89,7 @@ class ConcreteWord10 extends MicroOfficeFactory {
         }
 
         else {
-            System.out.println("Warning! : Word90 has been generated twice");
+            System.out.println("Warning! : Word10 has been generated twice");
             return null;
         }
     }
@@ -122,7 +122,7 @@ class ConcreteWord24 extends MicroOfficeFactory {
         }
 
         else {
-            System.out.println("Warning! : Word90 has been generated twice");
+            System.out.println("Warning! : Word24 has been generated twice");
             return null;
         }
     }
