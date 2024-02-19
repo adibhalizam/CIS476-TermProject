@@ -248,21 +248,21 @@ class TextBoxWord24 extends AbstractTextBox {
 }
 
 class Client {
-    private AbstractButton button;
-    private AbstractPanel panel;
-    private AbstractTextBox textBox;
+    private AbstractButton AbstractButton;
+    private AbstractPanel AbstractPanel;
+    private AbstractTextBox AbstractTextBox;
 
     //Constructor
     public Client(MicroOfficeFactory factory) {
-        button = factory.createButton();
-        panel = factory.createPanel();
-        textBox = factory.createTextBox();
+        AbstractButton = factory.createButton();
+        AbstractPanel = factory.createPanel();
+        AbstractTextBox = factory.createTextBox();
     }
 
     public void run() {
-        this.button.display();
-        this.panel.display();
-        this.textBox.display();
+        this.AbstractButton.display();
+        this.AbstractPanel.display();
+        this.AbstractTextBox.display();
     }
 }
 
